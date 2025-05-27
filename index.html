@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medforms</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- MEDFORM LOGIN -->
+   
+     <section class="login-page">
+        <div class="container">
+            <div class="login-gridarea">
+                <div class="login-content">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="form-content">
+                        <h2>Fast-track staff <br> credentialing to meet <br> top healthcare standards.</h2>
+                        <div class="form-fields">
+                            <div class="form-group">
+                                <label for="">Email Address</label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input id="password-field" type="password" name="password" id="">
+                                <span onclick="showPassword()" id="toggle-pass" class="toggle-password"></span>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox-mini" name="" id=""> <label for="">Remember Me</label>
+                            </div>
+                            <div class="buttonss-area">
+                                <button class="btn-primary-solid">Log In</button>
+                                <button class="btn-primary-outline">Sign Up</button>
+                            </div>
+                            <div class="forgot-password">
+                                <a class="forgot-pass" href="forgot-password.html">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-area">
+                    <img src="images/login-image.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- MEDFORM LOGIN -->
+
+    <script>
+        function showPassword() {
+	document.getElementById('toggle-pass').classList.toggle('active')
+	var x = document.getElementById("password-field");
+	if (x.type === "password") {
+	  x.type = "text";
+	} else {
+	  x.type = "password";
+	}
+  }
+
+  function showPassword2() {
+	document.getElementById('toggle-pass2').classList.toggle('active')
+	var x = document.getElementById("password-field2");
+	if (x.type === "password") {
+	  x.type = "text";
+	} else {
+	  x.type = "password";
+	}
+  }
+    </script>
+</body>
+</html>
