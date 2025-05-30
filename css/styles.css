@@ -141,13 +141,29 @@ button{
 
 .btn-primary-solid{
     border: 0px;
-    background-color: #C449FF;
+    background-color: #00B6F9;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #00B6F9;
+}
+
+.btn-primary-solid:hover{
+    background-color: #fff;
+    color: #00B6F9;
+}
+
+.btn-primary-outline:hover{
+    background-color: #00B6F9;
+    color: #fff;
 }
 
 .btn-primary-outline{
-    border: 1px solid #C449FF;
-    color: #C449FF;
+    border: 1px solid #00B6F9;
+    color: #00B6F9;
+     transition: 0.3s ease-in-out;
+    
 }
+
+.btn-primary-outline
 
 .forgot-fields{
     margin-bottom: 20px;
